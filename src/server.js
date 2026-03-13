@@ -15,5 +15,5 @@ app.use("/monedas", monedas)
 app.use("/transacciones", transacciones)
 
 app.listen(3000, () => {
-    console.log("Servidor corriendo en puerto 3000")
+    console.log("Servidor corriendos en puerto 3000")
 })
