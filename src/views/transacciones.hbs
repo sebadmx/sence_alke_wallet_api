@@ -1,0 +1,19 @@
+<h1>💸 Transacciones</h1>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Emisor</th>
+    <th>Receptor</th>
+    <th>Monto</th>
+  </tr>
+
+  {{#each transacciones}}
+    <tr>
+      <td>{{transaction_id}}</td>
+      <td>{{emisor}}</td>
+      <td>{{receptor}}</td>
+      <td>${{importe}}</td>
+    </tr>
+  {{/each}}
+</table>

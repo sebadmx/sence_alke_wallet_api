@@ -12,3 +12,12 @@ router.get("/", async (req, res) => {
 })
 
 module.exports = router
+
+router.get("/vista", async (req, res) => {
+    try {
+        const result = await pool.query("SELECT * FROM usuario")
+        res.render("usuarios", { usuarios: result.rows })
+    } catch (error) {
+        res.status(500).send(error)
+    }
+})
